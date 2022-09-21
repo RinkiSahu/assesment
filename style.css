@@ -24,6 +24,20 @@ a {
 .bg-light {
   background: var(--clr-bg-light) repeat-x;
 }
+.lh {
+  line-height: 1.5rem;
+}
+.linkc {
+  font-size: 0.8rem;
+
+  text-transform: uppercase;
+}
+.linkc a {
+  color: var(--clr-gry-color);
+}
+.linkc a:hover {
+  color: var(--clr-dark-txt);
+}
 .sm-text {
   font-size: 0.7rem;
   font-weight: 600;
