@@ -207,3 +207,18 @@ footer {
     border: none;
   }
 }
+
+/* owl navigation */
+.owl-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.owl-nav button {
+  border: none;
+  background: none;
+  font-size: 0.7rem;
+}
+
+.owl-nav a:hover {
+  color: #c23231;
+}

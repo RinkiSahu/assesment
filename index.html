@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />    
    <link href="style.css" type="text/css" rel="stylesheet" />
+   <link href="https://technext.github.io/kider/lib/owlcarousel/assets/owl.carousel.min.css" type="text/css" rel="stylesheet">
     <title>Beauty</title>
   </head>
   <body>
@@ -188,28 +189,72 @@
         Nisi quae, blanditiis et ullam eaque culpa nam ar</p>
     </div>
   </div>
-  <div class="row row-flex justify-content-between">    
-    <div class="col-md-6">
-      <img src="images/img_2.jpg" class="img-fluid" alt=""/>
+  <div class="row  justify-content-between">  
+    <div class="owl-carousel beauty-carousel wow fadeInUp" data-wow-delay="0.1s">
+      <div class="item d-flex">
+          <div class="col-md-6">
+            <img src="images/img_2.jpg" class="img-fluid  pe-2" alt=""/>
+          </div>
+          <div class="col-md-6">
+              <div class="border border-light px-5 py-5 mb-5">
+                <h4 class="text-uppercase fs-5"> Phulwari punjab</h4>
+                <p class="lh">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eligendi
+                  adipisicing elit. Quas eligendierror consequuntur nulla tempora excepturi
+                  neque doloremque facilis rem rerum. Laboriosam totam tenetur aspernatur quo 
+                  accusamus debitis distinctio? Dolorem, libero?
+                </p>
+              </div>
+              <div class=" pt-3">
+                <img src="images/img_1.jpg" class="img-fluid mt-auto" alt=""/>
+              </div>
+        </div>
+      </div>
+
+      <div class="beauty-item d-flex">
+          <div class="col-md-6">
+            <img src="images/img_2.jpg" class="img-fluid pe-2" alt=""/>
+          </div>
+          <div class="col-md-6">
+              <div class="border border-light px-5 py-5 mb-5">
+                <h4 class="text-uppercase fs-5"> Phulwari punjab</h4>
+                <p class="lh">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eligendi
+                  adipisicing elit. Quas eligendierror consequuntur nulla tempora excepturi
+                  neque doloremque facilis rem rerum. Laboriosam totam tenetur aspernatur quo 
+                  accusamus debitis distinctio? Dolorem, libero?
+                </p>
+              </div>
+              <div class=" pt-3">
+                <img src="images/img_1.jpg" class="img-fluid mt-auto" alt=""/>
+              </div>
+        </div>
+      </div>
+       <div class="beauty-item d-flex">
+          <div class="col-md-6">
+            <img src="images/img_2.jpg" class="img-fluid pe-2" alt=""/>
+          </div>
+          <div class="col-md-6">
+              <div class="border border-light px-5 py-5 mb-5">
+                <h4 class="text-uppercase fs-5"> Phulwari punjab</h4>
+                <p class="lh">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eligendi
+                  adipisicing elit. Quas eligendierror consequuntur nulla tempora excepturi
+                  neque doloremque facilis rem rerum. Laboriosam totam tenetur aspernatur quo 
+                  accusamus debitis distinctio? Dolorem, libero?
+                </p>
+              </div>
+              <div class=" pt-3">
+                <img src="images/img_1.jpg" class="img-fluid mt-auto" alt=""/>
+              </div>
+        </div>
+      </div>
     </div>
-    <div class="col-md-6">
-      <div class="border border-light px-5 py-5 mb-5">
-        <h4 class="text-uppercase fs-5"> Phulwari punjab</h4>
-        <p class="lh">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eligendi   adipisicing elit. Quas eligendierror consequuntur nulla tempora excepturi neque doloremque facilis rem rerum. Laboriosam totam tenetur aspernatur quo accusamus debitis distinctio? Dolorem, libero?
-        </p>
-      </div>
-      <div class=" pt-3">
-      <img src="images/img_1.jpg" class="img-fluid mt-auto" alt=""/>
-      </div>
-    </div>   
-  </div>
-    
-    <div class="d-flex justify-content-between mb-5 linkc">
-    <a href=""><svg width="10" data-feather="arrow-left"></svg>Prev Story</a>
-    <a href="">Next Story<svg width="10" data-feather="arrow-right"></svg></a>
-  </div>
-  <div class="container">
+  </div> 
+  
+  <div class="d-flex justify-content-between mb-5 linkc"> </div>
+  
+   <div class="container">
     <div class="text-center">
       <img src="images/instagram.jpg" alt="">
       <h3 class="my-3"> Follow our journey</h3>
@@ -238,12 +283,38 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="js/owl.carousel.min.js+main.js.pagespeed.jc.Xm0G814cu7.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/min.js/0.1.0/$.min.js"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script>
-      feather.replace()
+      feather.replace();
+      (function ($) {
+    "use strict";
+    $(".beauty-carousel").owlCarousel({
+        autoplay: false,
+        smartSpeed: 1000,
+        margin: 0,
+        dots: false,
+        loop: true,
+        nav : true,
+        navText : [
+            '<span class="prev">Prev Story</span>',
+            '<span class="next">Next Story</span>'
+        ],
+        responsive: {
+            0:{
+                items:1 
+            },
+            992:{
+                items:1
+            }
+        }
+      });    
+    })(jQuery);
     </script>
+
   </body>
 </html>
